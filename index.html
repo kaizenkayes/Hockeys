@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Font Familay -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Daisy Ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="font-manrope container mx-auto mt-12">
+      <!-- Navber -->
+
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] text-xs rounded-box w-52"
+              >
+                <li class="text-[#FF4240]"><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <a class="text-[#131318] text-2xl font-extrabold"
+              >Hockey<span class="text-[#FF4240]">’</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-xs">
+              <li class="text-[#FF4240]"><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end flex items-center gap-3">
+            <img class="hidden lg:block" src="./Images/Frame.png" alt="" />
+            <a
+              class="bg-[#FF4240] px-4 py-3 lg:px-6 lg:py-3 rounded-md text-white text-xl font-bold cursor-pointer"
+            >
+              Get Ticket</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner -->
+
+      <div class="relative mx-5">
+        <div class="carousel w-full my-4 lg:my-12">
+          <div
+            id="slide1"
+            class="carousel-item rounded-xl relative w-full bg-[url(./images/1.png)] bg-no-repeat bg-cover bg-center h-[200px] lg:h-[550px]"
+          >
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div
+          id="slide2"
+          class="carousel-item rounded-xl relative w-full bg-[url(./images/1.png)] bg-no-repeat bg-cover h-[200px] lg:h-[550px]"
+        >
+          <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-[#131318] px-4 py-4 lg:px-8 lg:py-8 rounded-lg absolute lg:bottom-20 lg:right-10"
+        >
+          <h1 class="text-white text-lg lg:text-2xl py-2 lg:py-4">
+            Meet all the heroes from the field
+          </h1>
+          <p class="text-[#ffffff99] text-xs font-medium">
+            Pure Hockey has our picks for this year’s best holiday gifts for
+            hockey players and fans. <br />
+            Check out our full 2022 holiday gift guide below
+          </p>
+        </div>
+      </div>
+    </header>
+    <main class="font-manrope container mx-auto ">
+      <!-- Professional Hockeys Club -->
+        <section class="mt-36 lg:mt-10">
+          <div class="flex flex-col items-center justify-center border-y-2 ">
+            <h1 class=" text-xl lg:text-3xl text-[#131318] text-center font-extrabold py-4 lg:py-6">Professional Hockeys Club</h1>
+            <p class="text-center text-[#13131899] font-medium text-xs mx-5 pb-6">carolinahurricanes.com and caneshockey.com are trademarks of the Carolina Hurricanes Hockey Club. <br>Stanley Cup and NHL Conference logos </p>
+          </div>
+
+          <div class="flex flex-col lg:justify-around lg:flex-row mt-8 gap-10">
+           <div class="flex flex-col justify-center items-center gap-4">
+            <div class="radial-progress text-primary text-red-500" style="--value:85;" role="progressbar">85%</div>
+            <h1 class="text-[#131318] text-xl font-semibold">Prayer Facility</h1>
+            <p class="text-center text-[#13131899] font-normal text-xs">I want to show a text inside the progress bar 85%</p>
+           </div>
+
+           <div class="flex flex-col justify-center items-center gap-4">
+            <div class="radial-progress text-primary text-green-500" style="--value:95;" role="progressbar">95%</div>
+            <h1 class="text-[#131318] text-xl font-semibold">Experienced Coach</h1>
+            <p class="text-center text-[#13131899] font-normal text-xs">I want to show a text inside the progress bar 95%</p>
+           </div>
+
+           <div class="flex flex-col justify-center items-center gap-4">
+            <div class="radial-progress text-primary text-yellow-500" style="--value:90;" role="progressbar">90%</div>
+            <h1 class="text-[#131318] text-xl font-semibold">Senior Player</h1>
+            <p class="text-center text-[#13131899] font-normal text-xs">I want to show a text inside the progress bar 90%</p>
+           </div>
+
+           <div class="flex flex-col justify-center items-center gap-4">
+            <div class="radial-progress text-primary text-blue-500" style="--value:80;" role="progressbar">80%</div>
+            <h1 class="text-[#131318] text-xl font-semibold">Training Ground</h1>
+            <p class="text-center text-[#13131899] font-normal text-xs">I want to show a text inside the progress bar 80%</p>
+           </div>
+           
+          </div>
+        </section>
+
+        <!-- Program Sections -->
+
+        <section class="mt-20">
+          <div class="flex flex-col items-center justify-center border-y-2 ">
+            <h1 class=" text-xl lg:text-3xl text-[#131318] text-center font-extrabold py-4 lg:py-6">Program Sections</h1>
+            <p class="text-center text-[#13131899] font-medium text-xs mx-5 pb-6">Program is the very inportant paly the hokeys trademarks of the Carolina Hurricanes Hockey Club. <br>Stanley Cup and NHL Conference logos </p>
+          </div>
+          <div>
+            
+          </div>
+        </section>
+    </main>
+  </body>
+</html>
